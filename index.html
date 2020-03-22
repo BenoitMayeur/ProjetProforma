@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/screen.css" type="text/css" rel="stylesheet">
+    <title>Nombres</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th class="box_with_message"><div><label for="number_user">Entrez un nombre entier:</label></div>
+                    <div><span id="error_message" class="error_message"></span></div>
+                </th>
+                <th><input type="number" class="case_for_number" name="number_user" id="number_user" required></th>
+                <th><button id="submit">Soumettre</button></th>
+                <th><button id="restart">Recommencer</button></th>
+            </tr>
+            <tr>
+                <td colspan="3">Le nombre de nombres entrés:</td>
+                <td class="td_results"><input class="results" id="amount_numbers"></input></td>
+            </tr>
+            <tr>
+                <td colspan="3">La somme des nombres entrés:</td>
+                <td class="td_results"><input class="results" id="sum_numbers"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Le plus grand des nombres entrés:</td>
+                <td class="td_results"><input class="results" id="biggest_number"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Le plus petit des nombres entrés:</td>
+                <td class="td_results"><input class="results" id="smallest_number"></td>
+            </tr>
+            <tr>
+                <td colspan="3">La moyenne des nombres entrés:</td>
+                <td class="td_results"><input class="results" id="average"></td>
+            </tr>
+            <tr>
+                <td colspan="3">La liste de tous les nombres entrés:</td>
+                <td class="td_results"><input class="results" id="list_all_numbers"></td>
+            </tr>
+            <tr>
+                <td colspan="3">La plus grande séquence de nombres croissants entrés:</td>
+                <td class="td_results"><input class="results" id="sequence_growing_numbers"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+</html>
