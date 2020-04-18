@@ -63,6 +63,10 @@ document.getElementById('submit').addEventListener('click', function (event) {
     }
 
     //Lines under: calculation and display of the biggest number given by the user
+    biggest_number = Math.max(...table_all_numbers);
+    document.getElementById('biggest_number').value = biggest_number;
+
+/*
     if (table_all_numbers.length == 1) {
         document.getElementById('biggest_number').value = number_user;
     }
@@ -74,9 +78,14 @@ document.getElementById('submit').addEventListener('click', function (event) {
                 document.getElementById('biggest_number').value = biggest_number;
             }
         }
-    }
+    }*/
 
     //Lines under: calculation and display of the smallest number given by the user
+
+    smallest_number = Math.min(...table_all_numbers);
+    document.getElementById('smallest_number').value = smallest_number;
+
+/*
     if (table_all_numbers.length == 1) {
         document.getElementById('smallest_number').value = number_user;
     }
@@ -89,7 +98,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
             }
         }
     }
-
+*/
     //Lines under: calculation and display of the average of the numbers given by the user 
     average = sum_numbers / table_all_numbers.length;
     document.getElementById('average').value = average;
