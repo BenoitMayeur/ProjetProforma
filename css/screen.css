@@ -31,7 +31,7 @@ td{
     padding: 5px;
 }
 
-.td_results{
+.tdResults{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +42,7 @@ td{
     width: 100px;
 }
 
-.error_message{
+.errorMessage{
     color: red;
+    display: none;
 }
